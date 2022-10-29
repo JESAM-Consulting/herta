@@ -69,7 +69,7 @@ export default function Home() {
         });
       } else {
         window.scroll({
-          top: 190,
+          top: 210,
           left: 0,
           behavior: "smooth",
         });
