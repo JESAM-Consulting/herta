@@ -63,13 +63,13 @@ export default function Home() {
     if (dimension < 900 && step != 10 && step != 0) {
       if (step == 9) {
         window.scroll({
-          top: 110,
+          top: 130,
           left: 0,
           behavior: "smooth",
         });
       } else {
         window.scroll({
-          top: 110,
+          top: 210,
           left: 0,
           behavior: "smooth",
         });
