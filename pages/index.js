@@ -201,9 +201,9 @@ export default function Home() {
       <Header />
       <div
         className={`grid lg:grid-cols-[70%_30%] ${
-          step == 8 ? " lg:min-h-[83vh]" : " lg:h-[83vh] "
+          step == 8 ? " lg:min-h-[78.4vh]" : " lg:h-[78.4vh] "
         } overflow-hidden`}>
-        <div className="lg:px-16 lg:py-6 lg:pb-0 md:pt-10 relative ">
+        <div className="lg:px-16 lg:py-4 lg:pb-0 md:pt-10 relative ">
           <div>
             <div className="font-visby reltive lg:px-0 px-6 md:py-0 py-6 flex justify-between items-center">
               <div className={step != 9 && step != 10 ? "block" : "hidden"}>
@@ -292,8 +292,8 @@ export default function Home() {
             className={`w-full lg:absolute relative bg-[#EFEFEF] lg:left-0 lg:bottom-0 lg:mt-0 md:mt-10 mt-6 ${
               isShow() ? " block " : " hidden "
             }`}>
-            <div className="text-[#8C8C8C] lg:px-20 md:px-6 lg:py-3 py-3 px-6">
-              <div className="flex mb-4 items-start space-x-2">
+            <div className="text-[#8C8C8C] lg:px-20 md:px-6 lg:py-4 py-3 px-6">
+              <div className="flex  items-start space-x-2">
                 <img src="/images/help.svg" alt="" className="mt-1.5" />
                 <div>
                   <h1 className="text-base">Warum fragen wir das?</h1>
@@ -308,8 +308,9 @@ export default function Home() {
               setStep(step - 1);
             }}
             data-show={step != 0 && step != 10 && step != 7 && step != 8}
-            className={`bg-green-1 lg:absolute lg:flex hidden  right-4 bottom-[122px] 
-             backButton group hover:cursor-pointer  transition-all ease-in-out duration-150 hover:bg-opacity-90 justify-center items-center space-x-3 font-roboto rounded-md py-2.5 md:w-32 w-10 text-white text-center`}>
+            className={`bg-green-1 lg:absolute lg:flex hidden  right-4 ${
+              step == 9 ? "bottom-[50px]" : "bottom-[105px]"
+            } backButton group hover:cursor-pointer  transition-all ease-in-out duration-150 hover:bg-opacity-90 justify-center items-center space-x-3 font-roboto rounded-md py-2.5 md:w-32 w-10 text-white text-center`}>
             <span className="w-3 group-hover:-translate-x-1 transition-all ease-in-out duration-150">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                 <path

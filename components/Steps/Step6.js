@@ -9,7 +9,7 @@ export default function Step6() {
     // setData(e.target.value);
     const limit = 5;
     setData(e.target.value.slice(0, limit));
-  }
+  };
   return (
     <div data-show={step == 6 ? true : false} className="flex flex-col step">
       <h1 className="font-visby lg:text-3xl md:text-2xl text-xl font-bold ">
@@ -21,7 +21,7 @@ export default function Step6() {
           <img
             src="/images/bitte.webp"
             alt=""
-            className="lg:w-[18rem] md:w-48 w-60"
+            className="lg:w-[17rem] md:w-48 w-60"
           />
         </div>
         <div className="lg:mt-4 space-y-4 text-xs md:hidden block">
@@ -78,8 +78,7 @@ export default function Step6() {
               value={data ? data : ""}
               onChange={(e) => {
                 setErr(false);
-                handleChange(e)
-                
+                handleChange(e);
               }}
             />
           </div>

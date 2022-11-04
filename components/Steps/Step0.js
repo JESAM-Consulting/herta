@@ -8,7 +8,7 @@ export default function Step0({ openlg, setOpenlg, openM, setOpenM }) {
   return (
     <div
       data-show={step == 0 ? true : false}
-      className="flex flex-col step lg:pb-0 pb-10 lg:min-h-[60vh] md:justify-center justify-center place-items-center w-full">
+      className="flex flex-col step lg:pb-0 pb-10 lg:min-h-[58vh] md:justify-center justify-center place-items-center w-full">
       <div className={`md:block hidden text-center font-bold mb-5`}>
         <p>
           Sie sparen <span className="text-[#F1C88B]">49.715</span> €
