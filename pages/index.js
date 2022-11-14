@@ -119,11 +119,11 @@ export default function Home() {
     "Stromverbrauch",
     "Dachform",
     "Finanzierung",
-    "",
     "Heizung",
+    "Postleitzahl",
     "Weitere Optionen",
     "Solar-Zukunft",
-    "Angebot erhalten",
+    "",
   ];
   let [marked, setMarked] = useState([
     false,
@@ -139,7 +139,7 @@ export default function Home() {
   ]);
   useEffect(() => {
     window.gtag("event", "number_step", { value: step });
-    if (step < 10 && step != 5 && marked[step] == false) {
+    if (step < 10 && marked[step] == false && step != 9) {
       window.gtag("event", conversions[step]);
       setMarked(
         marked.map((e, index) => {

@@ -141,6 +141,7 @@ export default function Step9() {
         config
       )
       .then((res) => {
+        window.gtag("event", "Angebot erhalten");
         myForm.current.reset();
         setStep(step + 1);
       })
